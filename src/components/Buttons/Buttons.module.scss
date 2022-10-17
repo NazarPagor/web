@@ -1,0 +1,32 @@
+.primaryButton {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 35px;
+  gap: 10px;
+  border-radius: 5px;
+  border: none;
+  max-width: 200px;
+  max-height: 50px;
+
+
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0;
+  text-align: center;
+  color: white;
+
+  background-color: #910420;
+  transition: .2s ease;
+
+
+  &:hover {
+    background-color: #DE0732;
+    transition: .2s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
+  }
+}
