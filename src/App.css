@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+:root {
+    --all-section-right-left-padding: 24px 128px 0 128px;
+}
+
+.container {
+    width: 100%;
+}
