@@ -16,7 +16,7 @@ const Footer = () => {
         <footer className={"container" + " " + style.footer}>
             <div className={style.inner_footer}>
                 <div>
-                    <img src={logoFooter} alt="logo"/>
+                    <img src={logoFooter} alt="logo_footer"/>
                 </div>
                 <div className={style.text_block}>
                     <ul>

@@ -18,7 +18,7 @@ const MemberCard = ({name, role, text, icon}: ServicesItemProps) => {
     return (
         <div className={style.member_card}>
             <div className={style.member_card__icon}>
-                <img src={icon} alt="icon"/>
+                <img src={icon} alt="member_icon"/>
             </div>
             <h3>{name}</h3>
             <h4>{role}</h4>

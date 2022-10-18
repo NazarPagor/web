@@ -182,7 +182,7 @@ const MainPage = () => {
                         <div className={style.partners_icons}>
                             {partners_icon.map((icon, index) => (
                                 <div key={index} className={style.partners_icons__icon}>
-                                    <img src={icon.icon} alt="icon"/>
+                                    <img src={icon.icon} alt="icon_partner"/>
                                 </div>
                             ))}
                         </div>
@@ -216,7 +216,7 @@ const MainPage = () => {
                                 <PrimaryButton backgroundColor={"white"}>Download</PrimaryButton>
                             </div>
                             <div className={style.photo}>
-                                <img src={winepapperBack} alt="photo"/>
+                                <img src={winepapperBack} alt="backgound"/>
                             </div>
                         </div>
                     </div>
