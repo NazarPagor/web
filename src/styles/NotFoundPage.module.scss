@@ -1,0 +1,26 @@
+.screen {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../images/404_background.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.content {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 88px;
+    letter-spacing: 0;
+    text-align: center;
+
+  }
+}

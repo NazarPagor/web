@@ -115,7 +115,7 @@ const MainPage = () => {
                 </p>
                 <PrimaryButton>STAKE NOW</PrimaryButton>
             </div>
-            <div className={style.servicesSection}>
+            <div id={'services_section'} className={style.servicesSection}>
                 <div className={style.servicesSection__header}>
                     <h1>Our <span style={{color: "#910420"}}>Service</span></h1>
                     <p className={style.header_description}>
@@ -138,7 +138,7 @@ const MainPage = () => {
                 <div className={style.bottom_wave} style={{transform: 'rotateY(180deg)'}}/>
             </div>
             <div className={style.otherSection_wrapper}>
-                <div className={style.projectServices}>
+                <div id={"project_section"} className={style.projectServices}>
                     <div className={style.projectServices__header}>
                         <h1>Projects</h1>
                         <p className={style.header_description}>
@@ -156,7 +156,7 @@ const MainPage = () => {
                     </div>
 
                 </div>
-                <div className={style.team_section}>
+                <div id={"team_section"} className={style.team_section}>
                     <div className={style.team_section__header}>
                         <h1>TEAM</h1>
                         <p className={style.header_description}>
@@ -175,7 +175,7 @@ const MainPage = () => {
                             </div>
                         ))}
                     </div>
-                    <div className={style.partners_block}>
+                    <div id={"partners_section"} className={style.partners_block}>
                         <div className={style.partners_block__header}>
                             <h1>PARTNERS</h1>
                         </div>
@@ -192,7 +192,7 @@ const MainPage = () => {
                         justifyContent: 'center',
                         marginTop: '200px'
                     }}>
-                        <div className={style.winepaper_block}>
+                        <div id={"winepaper_section"} className={style.winepaper_block}>
                             <div className={style.text_block}>
                                 <div>
                                     <h1>WINEPAPER</h1>

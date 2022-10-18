@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav className={style.navbar}>
             <div>
-                <img src={logo} alt="logo_nav"/>
+                <a href="/"> <img src={logo} alt="logo_nav"/></a>
             </div>
             <ul className={style.navbar__link_section}>
                 {navbarConsts.map((item, index) => (
