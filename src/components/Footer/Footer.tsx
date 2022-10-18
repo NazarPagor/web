@@ -20,10 +20,10 @@ const Footer = () => {
                 </div>
                 <div className={style.text_block}>
                     <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/">Contact</a></li>
+                        <li><a href="/">FAQ</a></li>
+                        <li><a href="/">Terms of Use</a></li>
                     </ul>
 
 
