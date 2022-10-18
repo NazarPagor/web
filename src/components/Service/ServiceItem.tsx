@@ -12,7 +12,7 @@ const ServiceItem = ({title, text, icon}: ServicesItemProps) => {
     return (
         <div className={style.serviceItem_block}>
             <div className={style.icon_block}>
-                <img src={icon} alt="icon"/>
+                <img src={icon} alt="icon_service"/>
             </div>
             <div className={style.text_block}>
                 <h3>{title}</h3>
