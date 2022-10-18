@@ -5,23 +5,23 @@ export const navbarConsts = [
     },
     {
         text: "VALUES",
-        link: "#",
+        link: "#services_section",
     },
     {
         text: "PROJECTS",
-        link: "#",
+        link: "#project_section",
     },
     {
         text: "TEAM",
-        link: "#",
+        link: "#team_section",
     },
     {
         text: "PARTNERS",
-        link: "#",
+        link: "#partners_section",
     },
     {
         text: "WINEPAPER",
-        link: "#",
+        link: "#winepaper_section",
     },
 
 ]
