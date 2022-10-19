@@ -12,3 +12,22 @@
 .container {
     width: 100%;
 }
+
+
+@keyframes showNav {
+    0% {
+        transform: translateX(70vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes closeNav {
+    0% {
+        transform: translateX(0vw);
+    }
+    100% {
+        transform: translateX(70vw);
+    }
+}

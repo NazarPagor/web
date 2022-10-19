@@ -1,0 +1,60 @@
+.contactUs__wrapper {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 150px;
+  background-image: url("../images/main-screen-background.jpg");
+  background-size: cover;
+
+}
+
+.contactUs__form {
+  padding: var(--all-section-right-left-padding);
+  margin-top: 120px;
+
+  h1 {
+    font-family: Montserrat, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0;
+    text-align: left;
+
+  }
+}
+
+.form {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  gap: 50px;
+}
+
+.backHome {
+  width: 100%;
+  margin-top: 100px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .form {
+    margin-top: 60px;
+    gap: 10px;
+    min-width: 100%;
+  }
+  .backHome {
+    display: none;
+  }
+
+  .contactUs__form {
+    display: grid;
+    padding: 32px;
+
+    h1 {
+      font-size: 36px;
+    }
+  }
+
+}

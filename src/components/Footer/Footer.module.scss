@@ -57,3 +57,51 @@
   color: #BABABA;
 
 }
+
+
+@media screen and (max-width: 991px) {
+
+  .text_block {
+    ul {
+      gap: 30px;
+    }
+  }
+  .footer {
+    height: 325px;
+    font-size: 8px;
+  }
+  .inner_footer {
+    gap: 20px;
+
+    img {
+      max-width: 90px;
+    }
+  }
+  .link_block {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 25px;
+
+    &__link_item {
+      max-width: 16px;
+
+      svg {
+        max-width: 16px;
+      }
+    }
+  }
+  .lic_text {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .link_block {
+    display: none;
+  }
+  .text_block {
+    ul {
+      gap: 10px;
+    }
+  }
+}
