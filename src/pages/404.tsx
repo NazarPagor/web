@@ -12,6 +12,8 @@ const NotFoundPage = () => {
                 <img style={{maxHeight: "380px", maxWidth: "280px"}} src={icon} alt="404_icon"/>
                 <h1 style={{color: "#910420", marginTop: "50px"}}>THE GLASS BROKE :(</h1>
                 <h3>PAGE NOT FOUND</h3>
+                <h4>ERROR 404</h4>
+                <h5>We couldn’t find this page.</h5>
                 <div style={{marginTop: "56px"}}>
                     <PrimaryButton>BACK TO HOME</PrimaryButton>
                 </div>

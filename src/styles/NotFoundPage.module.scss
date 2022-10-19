@@ -1,8 +1,8 @@
 .screen {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-image: url("../images/404_background.png");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -14,6 +14,10 @@
   flex-direction: column;
   text-align: center;
 
+  h4, h5 {
+    display: none;
+  }
+
   h1 {
     font-family: Montserrat, sans-serif;
     font-size: 72px;
@@ -22,5 +26,39 @@
     letter-spacing: 0;
     text-align: center;
 
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    padding: 0 50px;
+    align-items: start;
+    text-align: start;
+
+    h1, h3, img {
+      display: none;
+    }
+
+    h4 {
+      display: block;
+      font-family: Montserrat, sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 59px;
+      letter-spacing: 0;
+      text-align: left;
+      color: #910420;
+    }
+
+    h5 {
+      display: block;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 20px;
+      letter-spacing: 0;
+      text-align: left;
+
+    }
   }
 }

@@ -21,9 +21,9 @@ const Footer = () => {
                 <div className={style.text_block}>
                     <ul>
                         <li><a href="/">HOME</a></li>
-                        <li><a href="/">Contact</a></li>
-                        <li><a href="/">FAQ</a></li>
-                        <li><a href="/">Terms of Use</a></li>
+                        <li><a href="/contacts">Contact</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/terms_use">Terms of Use</a></li>
                     </ul>
 
 

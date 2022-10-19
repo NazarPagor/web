@@ -1,0 +1,30 @@
+.input_block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  input {
+    background: #D9D9D9;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    width: 100%;
+  }
+
+  label {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  textarea{
+    background: #D9D9D9;
+    border-radius: 5px;
+    border: none;
+    height: 220px;
+    width: 100%;
+  }
+}
