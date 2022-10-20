@@ -7,6 +7,7 @@ import ContactUs from "./pages/ContactUs";
 import TermOfUse from "./pages/TermOfUse";
 import Faq from "./pages/FAQ";
 
+
 function App() {
     return (
         <div className="container">
