@@ -22,7 +22,6 @@ const From = () => {
             <div style={{
                 display: "flex",
                 justifyContent: "space-between",
-                gap: "77px"
             }}>
                 <FormInput
                     id="firstName"
@@ -61,10 +60,10 @@ const From = () => {
                           htmlFor={"textarea"}
             />
             <div style={{
-                width:"100%",
-                display:"flex",
-                justifyContent:'center',
-                marginTop:"2    0px"
+                width: "100%",
+                display: "flex",
+                justifyContent: 'center',
+                marginTop: "20px"
             }}>
                 <PrimaryButton> SEND</PrimaryButton>
             </div>

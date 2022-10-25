@@ -66,9 +66,9 @@
 
 .accordion_content {
   font-family: Montserrat, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 15px;
+  line-height: 17px;
   letter-spacing: 0;
   text-align: left;
   max-width: 600px;
@@ -76,11 +76,23 @@
 }
 
 @media screen and (max-width: 767px) {
+
   .accordion {
     max-width: 320px;
     font-size: 16px;
   }
   .accordion_item {
     padding: 10px;
+  }
+
+
+  .faq__content{
+    margin-top: 20px;
+    h1{
+      text-align: center;
+    }
+  }
+  .faq__wrapper{
+    padding-bottom: 64px;
   }
 }
