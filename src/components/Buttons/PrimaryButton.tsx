@@ -12,21 +12,18 @@ interface PrimaryButtonProps {
 
 const PrimaryButton = ({children, backgroundColor, isInputButton, type}: PrimaryButtonProps) => {
 
-    let className;
+    let className = style.primaryButton;
 
     if (isInputButton) {
         className = style.primaryButton__input
-    } else {
-        className = style.primaryButton
+    }
+    if (backgroundColor === "white") {
+        className = style.whiteButton
     }
 
     return (
         <button className={className}
                 type={type}
-                style={{
-                    backgroundColor: backgroundColor,
-                    color: backgroundColor ? "black" : "white",
-                }}
         >
             {children}
         </button>

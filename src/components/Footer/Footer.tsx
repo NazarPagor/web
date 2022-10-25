@@ -20,7 +20,7 @@ const Footer = () => {
                 </div>
                 <div className={style.text_block}>
                     <ul>
-                        <li><a href="/">HOME</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="/contacts">Contact</a></li>
                         <li><a href="/faq">FAQ</a></li>
                         <li><a href="/terms_use">Terms of Use</a></li>
@@ -60,8 +60,8 @@ const Footer = () => {
                             <img src={yt} alt="li"/>
                         </div>
                     </div>
-                    <p className={style.lic_text}>info@dionysus.com</p>
-                    <p className={style.lic_text}>© 2021 Dionysus Pool, Inc. All rights reserved</p>
+                    <p className={style.lic_text}><a className={style.link} href="mailto:info@dionysus.com">info@dionysus.com</a></p>
+                    <p className={style.lic_text}>© 2022 Dionysus Pool, Inc. All rights reserved</p>
                 </div>
             </div>
         </footer>

@@ -11,14 +11,12 @@ import MemberCard from "../components/TeamCard/MemberCard";
 import miroIcon from "../images/team/Miro.png";
 import Igor from "../images/team/Igor_eyesgolden.png";
 import Matej from "../images/team/Matej.png";
-
 import tesla from '../images/partners-icon/Tesla.svg';
 import cardano from '../images/partners-icon/cardano.svg';
 import ikea from '../images/partners-icon/ikea.svg';
 import mers from '../images/partners-icon/mers.svg';
 import nasa from '../images/partners-icon/nasa.svg';
 import apple from '../images/partners-icon/apple.svg';
-
 import winepapperBack from '../images/winepapper.png';
 import Footer from "../components/Footer/Footer";
 
@@ -52,10 +50,7 @@ const project_mock_data = [
     },
     {
         title: <h1><span style={{color: '#910420'}}>KALY</span>X</h1>,
-        text: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet convallis erat bibendum malesuada.
-            Duis posuere eu feugiat ipsum eros. Urna dui imperdiet dictum libero a rhoncus. Lobortis neque, malesuada
-            scelerisque dui aliquet non proin. Ut nullam ultricies in sit tempor vulputate. Nisl neque arcu pellentesque
-            eget cras. Tortor sollicitudin vitae et integer eu, eu. Id sit blandit risus sit eleifend.</p>,
+        text: <p>UNDER CONSTRUCTION!</p>,
         button_text: 'TRY IT',
     },
     {
@@ -63,6 +58,7 @@ const project_mock_data = [
         text: <p>You can <span style={{color: '#910420'}}>subscribe to our newsletter</span> and you will be notified
             when we launch our new projects</p>,
         button_text: 'SUBSCRIBE',
+        button_link: '#connect_section'
     },
 ]
 
@@ -150,19 +146,26 @@ const MainPage = () => {
                     <div className={style.projectServices__project_services}>
                         {project_mock_data.map((item, index) => (
                             <div key={index} style={{marginTop: index * 100}}>
-                                <Projects title={item.title} text={item.text} button_text={item.button_text}/>
+                                <Projects title={item.title} text={item.text} button_text={item.button_text}
+                                          link_button={item?.button_link}/>
                             </div>
                         ))}
                     </div>
 
                 </div>
+
                 <div id={"team_section"} className={style.team_section}>
                     <div className={style.team_section__header}>
                         <h1>TEAM</h1>
                         <p className={style.header_description}>
                             Our Team delivers immersive experience from dApps and <br/> honours the validator services
                             with
-                            stake pool <span style={{color: '#910420'}}>DIO</span>. Participants <br/> in Cardano
+                            stake pool <a style={{
+                            textDecoration: "underline #910420"
+                        }} href={"https://pool.pm/3d8103dd2ad0838d985a3fc00277c55da15279088f3b1dc11dd814ce"}
+                                          target="_blank">
+                            <span style={{color: '#910420'}}>DIO</span>
+                        </a>. Participants <br/> in Cardano
                             ecosystem,
                             as well as our dear delegators are the <br/>
                             first priority in every action from our team.
@@ -223,7 +226,7 @@ const MainPage = () => {
 
                 </div>
 
-                <div className={style.connect_section}>
+                <div id="connect_section" className={style.connect_section}>
                     <div className={style.connect_section_text}>
                         <h1>SIGN UP FOR NEWSLETTER</h1>
                         <p>Stay updated!</p>

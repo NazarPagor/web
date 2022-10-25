@@ -59,6 +59,14 @@
 }
 
 
+.link {
+  text-decoration: none;
+  color: #BABABA;
+ &:hover{
+   color: #4f4f4f;
+ }
+}
+
 @media screen and (max-width: 991px) {
 
   .text_block {

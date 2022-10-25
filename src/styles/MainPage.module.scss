@@ -36,8 +36,8 @@
 }
 
 
-@media screen and (max-width: 1320px){
-  .mainSection{
+@media screen and (max-width: 1320px) {
+  .mainSection {
     height: calc(100vh - 130px);
   }
 }
@@ -105,12 +105,14 @@
   width: 100%;
   background: linear-gradient(205.8deg, #1B0005 0.89%, #35010B 60.93%, #910420 101.6%);
   padding: var(--all-section-right-left-padding);
+  z-index: 2;
 }
 
 
 .projectServices {
+  z-index: 2;
   &__header {
-    margin-top: 104px;
+    margin-top: 10px;
     color: white;
 
     h1 {
@@ -135,7 +137,6 @@
   }
 
   &__project_services {
-    height: 1000px;
     margin-top: 64px;
     gap: 24px;
     align-self: center;
@@ -146,10 +147,10 @@
 }
 
 .team_section {
+  z-index: 2;
   height: 100%;
-  background-image: url("../images/backgound_circles.svg");
-  background-repeat: no-repeat;
   background-size: 100%;
+  margin-top: 196px;
 
   &__header {
     margin-top: 104px;
@@ -186,7 +187,7 @@
 
 .partners_block {
   &__header {
-    margin-top: 104px;
+    margin-top: 255px;
     color: white;
 
     h1 {
@@ -205,12 +206,18 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    margin-top: 120px;
+    margin-top: 123px;
 
     &__icon {
       background: rgba(255, 255, 255, 0.3);
       border-radius: 5px;
       padding: 35px;
+      transition: .5s ease;
+      &:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+        background: #AFAFB0;
+        transition: .5s ease;
+      }
     }
   }
 }
@@ -292,17 +299,19 @@
     input {
       width: 100%;
       padding: 11px 28px;
-      max-width: 400px;
+      max-width: 280px;
       border: none;
       border-top-left-radius: 10px;
       border-bottom-left-radius: 10px;
       height: 50px;
-
       font-family: Montserrat, sans-serif;
-      font-size: 24px;
+      font-size: 18px;
       font-weight: 500;
       line-height: 29px;
       letter-spacing: 0;
+      &:focus{
+        outline: 1px solid black;
+      }
     }
   }
 }
@@ -511,10 +520,10 @@
       }
     }
   }
-  .mainSection{
+  .mainSection {
     height: calc(100vh - 106px);
     background-image: url("../images/mobile_back.png");
-    background-size: 100% 100% ;
+    background-size: 100% 100%;
   }
 
 }
