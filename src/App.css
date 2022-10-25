@@ -34,3 +34,8 @@
         transform: translateX(70vw);
     }
 }
+
+
+#social_icon {
+    fill: #910420;
+}
