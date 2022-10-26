@@ -73,7 +73,7 @@ const text_item_data = [
         icon: Igor,
         role: 'Partner',
         name: 'Igor',
-        text: 'Igor is the technical thought leader of the Dionysus ecosystem. With his expertise, he takes care of infrastructure, development, security and operations. His affinity for computer science lays another foundation for the future of Dionysus, and by extension, the future of Cardano. Igor is a natural oportunity-connector. He brings new ideas, people and implementation approaches to the same table.'
+        text: 'Igor is the technical mastermind of the Dionysus ecosystem. With his expertise, he takes care of infrastructure, development, security and operations. His affinity for computer science lays another foundation for the future of Dionysus and, by extension, the future of Cardano. Igor is a natural facilitator of opportunities. He brings new ideas, people and implementation approaches to the table.'
     },
     {
         icon: Matej,
@@ -115,9 +115,9 @@ const MainPage = () => {
                 <div className={style.servicesSection__header}>
                     <h1>Our <span style={{color: "#910420"}}>Service</span></h1>
                     <p className={style.header_description}>
-                        Dionysus pool is the place where Block Production meets with <br/>value for Cardano participants
+                        Dionysus pool is the place where Block Production meets with value for Cardano participants
                         from
-                        the non-custodian, safe <br/> and transparent dApps services.
+                        the non-custodian, safe and transparent dApps services.
                     </p>
                 </div>
                 <div className={style.servicesSection__itemBlock}>
@@ -128,10 +128,10 @@ const MainPage = () => {
             </div>
             <div style={{
                 backgroundColor: '#1D1D1D',
-                display: "flex"
+                display: "flex",
+                overflow: 'hidden'
             }}>
                 <div className={style.bottom_wave}/>
-                <div className={style.bottom_wave} style={{transform: 'rotateY(180deg)'}}/>
             </div>
             <div className={style.otherSection_wrapper}>
                 <div id={"project_section"} className={style.projectServices}>
@@ -139,13 +139,13 @@ const MainPage = () => {
                         <h1>Projects</h1>
                         <p className={style.header_description}>
                             <span style={{color: '#910420'}}>Dionysus pool</span> is still in development phase and
-                            there are more <br/>
+                            there are more
                             things coming to our platform.
                         </p>
                     </div>
                     <div className={style.projectServices__project_services}>
                         {project_mock_data.map((item, index) => (
-                            <div key={index} style={{marginTop: index * 100}}>
+                            <div key={index} className={style.test}>
                                 <Projects title={item.title} text={item.text} button_text={item.button_text}
                                           link_button={item?.button_link}/>
                             </div>
@@ -158,16 +158,16 @@ const MainPage = () => {
                     <div className={style.team_section__header}>
                         <h1>TEAM</h1>
                         <p className={style.header_description}>
-                            Our Team delivers immersive experience from dApps and <br/> honours the validator services
+                            Our Team delivers immersive experience from dApps and honours the validator services
                             with
                             stake pool <a style={{
                             textDecoration: "underline #910420"
                         }} href={"https://pool.pm/3d8103dd2ad0838d985a3fc00277c55da15279088f3b1dc11dd814ce"}
                                           target="_blank">
                             <span style={{color: '#910420'}}>DIO</span>
-                        </a>. Participants <br/> in Cardano
+                        </a>. Participants in Cardano
                             ecosystem,
-                            as well as our dear delegators are the <br/>
+                            as well as our dear delegators are the
                             first priority in every action from our team.
                         </p>
                     </div>

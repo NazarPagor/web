@@ -7,8 +7,9 @@
   gap: 10px;
   border-radius: 5px;
   border: none;
-  max-width: 250px;
+  width: 200px;
   max-height: 50px;
+  white-space: nowrap;
 
 
   font-family: montserrat, sans-serif;
@@ -32,6 +33,8 @@
 
 
 .whiteButton {
+ min-width: 100px;
+
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -40,7 +43,9 @@
   gap: 10px;
   border-radius: 5px;
   border: none;
-  max-width: 200px;
+  white-space: nowrap;
+
+  max-width: 250px;
   max-height: 50px;
   background: white;
 
@@ -64,17 +69,18 @@
 }
 
 .primaryButton__input {
-
+  width: 150px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 15px 25px;
+  white-space: nowrap;
+
   gap: 10px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border: none;
-  max-width: 200px;
   max-height: 50px;
 
 

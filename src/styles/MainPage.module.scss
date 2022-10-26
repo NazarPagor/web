@@ -43,6 +43,8 @@
 }
 
 .servicesSection {
+  overflow: hidden;
+  position: relative;
   width: 100%;
   background: #1D1D1D;
   padding: var(--all-section-right-left-padding);
@@ -64,6 +66,7 @@
     }
 
     .header_description {
+      max-width: 800px;
       margin-top: 35px;
       text-align: center;
 
@@ -92,10 +95,13 @@
 
 
 .bottom_wave {
+  overflow: hidden;
+  position: relative;
   width: 100%;
   background-image: url("../images/services/bottom_wave.png");
-  height: 50px;
-  background-size: contain;
+  height: 100%;
+  min-height: 50px;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -111,8 +117,11 @@
 
 .projectServices {
   z-index: 2;
+  display: grid;
+  justify-items: center;
+
   &__header {
-    margin-top: 10px;
+    margin-top: 120px;
     color: white;
 
     h1 {
@@ -126,6 +135,9 @@
 
     .header_description {
       margin-top: 35px;
+
+      max-width: 800px;
+
       text-align: center;
 
       font-family: montserrat, sans-serif;
@@ -137,16 +149,29 @@
   }
 
   &__project_services {
+
     margin-top: 64px;
     gap: 24px;
     align-self: center;
     justify-content: center;
     display: flex;
+
   }
 
 }
 
+.test:nth-child(2) {
+  margin-top: 100px;
+}
+
+.test:nth-child(3) {
+  margin-top: 200px;
+}
+
+
 .team_section {
+  display: grid;
+  justify-items: center;
   z-index: 2;
   height: 100%;
   background-size: 100%;
@@ -168,6 +193,7 @@
     .header_description {
       margin-top: 35px;
       text-align: center;
+      max-width: 800px;
 
       font-family: montserrat, sans-serif;
       font-size: 24px;
@@ -213,7 +239,8 @@
       border-radius: 5px;
       padding: 35px;
       transition: .5s ease;
-      &:hover{
+
+      &:hover {
         box-shadow: rgba(50, 50, 93, 0.25) 0 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
         background: #AFAFB0;
         transition: .5s ease;
@@ -309,7 +336,8 @@
       font-weight: 500;
       line-height: 29px;
       letter-spacing: 0;
-      &:focus{
+
+      &:focus {
         outline: 1px solid black;
       }
     }
@@ -375,9 +403,16 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .test:nth-child(2) {
+    margin-top: 0;
+  }
+
+  .test:nth-child(3) {
+    margin-top: 0;
+  }
   .mainSection {
-    padding: 0 32px;
+    padding: 0 20px;
 
     h1 {
       font-size: 36px;
@@ -385,22 +420,25 @@
     }
   }
   .servicesSection {
-    padding-bottom: 100px;
+    padding: 0 20px 280px 20px;
 
     &__header {
+      max-width: 100%;
+
       h1 {
         font-size: 36px;
       }
 
       .header_description {
-        font-size: 12px;
-        line-height: 15px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
       }
     }
   }
   .projectServices {
     &__header {
-      margin-top: 0;
+      margin-top: 90px;
 
       .header_description {
         margin-top: 0;
@@ -411,8 +449,9 @@
       }
 
       .header_description {
-        font-size: 12px;
-        line-height: 15px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 18px;
       }
     }
   }
@@ -429,6 +468,7 @@
     }
   }
   .team_section {
+    margin-top: 100px;
     background-image: none;
 
     &__header {
@@ -450,6 +490,7 @@
 
     &__team_block {
       margin-top: 50px;
+      gap: 100px;
     }
   }
   .winepaper_block {
@@ -498,7 +539,7 @@
   }
 
   .otherSection_wrapper {
-    padding: 0 16px;
+    padding: 0 20px;
   }
 
   .partners_block {

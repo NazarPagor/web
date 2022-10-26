@@ -9,6 +9,7 @@ import rr from "../../images/social-icons/rr.svg";
 import ds from "../../images/social-icons/ds.svg";
 import tg from "../../images/social-icons/tg.svg";
 import yt from "../../images/social-icons/yt.svg";
+import {links} from '../../consts/links';
 
 
 const Footer = () => {
@@ -25,42 +26,41 @@ const Footer = () => {
                         <li><a href="/faq">FAQ</a></li>
                         <li><a href="/terms_use">Terms of Use</a></li>
                     </ul>
-
-
                     <div className={style.link_block}>
-                        <div className={style.link_block__link_item}>
+                        <a href="#" className={style.link_block__link_item}>
                             <img src={fb} alt="fb"/>
-                        </div>
+                        </a>
 
-                        <div className={style.link_block__link_item}>
+                        <a target="_blank" href={links.instagram} className={style.link_block__link_item}>
                             <img src={ig} alt="ig"/>
-                        </div>
+                        </a>
 
-                        <div className={style.link_block__link_item}>
+                        <a target="_blank" href={links.twitter} className={style.link_block__link_item}>
                             <img src={tw} alt="tw"/>
-                        </div>
+                        </a>
 
-                        <div className={style.link_block__link_item}>
+                        <a href='#' className={style.link_block__link_item}>
                             <img src={li} alt="li"/>
-                        </div>
+                        </a>
 
-                        <div className={style.link_block__link_item}>
+                        <a href="#" className={style.link_block__link_item}>
                             <img src={rr} alt="li"/>
-                        </div>
+                        </a>
 
-                        <div className={style.link_block__link_item}>
+                        <a target="_blank" href={links.ds} className={style.link_block__link_item}>
                             <img src={ds} alt="li"/>
-                        </div>
+                        </a>
 
-                        <div className={style.link_block__link_item}>
-                            <img src={tg} alt="li"/>
-                        </div>
+                        <a target="_blank" href={links.tg} className={style.link_block__link_item}>
+                            <img src={tg} alt="tg"/>
+                        </a>
 
-                        <div className={style.link_block__link_item}>
-                            <img src={yt} alt="li"/>
-                        </div>
+                        <a target="_blank" href={links.yt} className={style.link_block__link_item}>
+                            <img src={yt} alt="yt"/>
+                        </a>
                     </div>
-                    <p className={style.lic_text}><a className={style.link} href="mailto:info@dionysus.com">info@dionysus.com</a></p>
+                    <p className={style.lic_text}><a className={style.link}
+                                                     href="mailto:info@dionysus.com">info@dionysus.com</a></p>
                     <p className={style.lic_text}>© 2022 Dionysus Pool, Inc. All rights reserved</p>
                 </div>
             </div>
